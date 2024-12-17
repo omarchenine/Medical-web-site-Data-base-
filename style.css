@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    background-color: #1a202c;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #2d3748;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h2 {
+    color: #63b3ed;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #4a5568;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #63b3ed;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+}
+
+/* Tables */
+.table {
+    border-radius: 8px;
+    font-size: bold;
+    overflow: hidden;
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+}
+
+.table thead {
+    background-color: #2b2fb075;
+}
+
+.table thead th {
+    color: #0e0202;
+    font-size: bold;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border: none;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #4a5568;
+}
+
+.table tbody tr:hover {
+    background-color: #4a5568;
+    transition: background-color 0.2s ease;
+}
+
+.table td {
+    padding: 1rem;
+    font-size: bold;
+    vertical-align: middle;
+    border-color: #4a5568;
+    color: #342e2e;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #4299e1;
+    color: #1a202c;
+}
+
+.btn-primary:hover {
+    background-color: #63b3ed;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+}
+
+.btn-danger {
+    background-color: #f56565;
+    color: #1a202c;
+}
+
+.btn-danger:hover {
+    background-color: #fc8181;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(245, 101, 101, 0.3);
+}
+
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    margin: 0 0.25rem;
+}
+
+/* Status Indicators */
+.status-urgent {
+    color: #fc8181;
+    font-weight: 600;
+}
+
+.status-stable {
+    color: #68d391;
+    font-weight: 600;
+}
+
+/* Forms */
+form input, form select, form textarea {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #63b3ed;
+    outline: none;
+    box-shadow: 0 0 5px rgba(99, 179, 237, 0.3);
+}
+
+form label {
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .section-container {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: #1a202c;
+    }
+    
+    .container, .section-container {
+        background: white;
+        box-shadow: none;
+        border: none;
+    }
+    
+    .btn {
+        display: none;
+    }
+
+    .table {
+        background: white;
+        color: #1a202c;
+        border: 1px solid #4a5568;
+    }
+
+    .table th, .table td {
+        color: #1a202c;
+        border-color: #4a5568;
+    }
+
+    h2, h3 {
+        color: #2b6cb0;
+    }
+}
+
+/* Additional Dark Theme Elements */
+::placeholder {
+    color: #cbd5e0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #63b3ed;
+}
+
+/* Selection color */
+::selection {
+    background-color: #63b3ed;
+    color: #1a202c;
+}
+
+/* Section Container */
+.section-container {
+    background: #2d3748;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #4a5568;
+}
+
+/* Navigation Bar - if you have one */
+.navbar {
+    background-color: #2d3748;
+    padding: 1rem;
+    border-bottom: 1px solid #4a5568;
+}
+
+.navbar a {
+    color: #63b3ed;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #90cdf4;
+}
+
+/* Footer - if you have one */
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #2d3748;
+    color: #ffffff;
+    border-top: 1px solid #4a5568;
+}
+
+footer a {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #90cdf4;
+}
